@@ -230,7 +230,13 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
-
+function addTen(nums){
+  var newArr = [];
+  for(var i=0; i<nums.length; i++){
+    newArr.push(parseInt(nums[i]) + 10);
+  }
+  return newArr;
+}
 
 
 ////////// PROBLEM 11 //////////
@@ -255,7 +261,12 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function longer(ar1,ar2){
+  if(ar1.length > ar2.length){
+    return ar1;
+  }
+  return ar2;
+}
 
 
 /*
@@ -267,7 +278,17 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function both(ar1,ar2){
+  var newArr = [];
+  for(var i=0; i<ar1.length; i++){
+    for(var j=0; j<ar2.length; j++){
+      if(ar1[i] === ar2[j]){
+        newArr.push(ar1[i]);
+      }
+    }
+  }
+  return newArr;
+}
 
 
 ////////// PROBLEM 12 //////////
@@ -307,7 +328,8 @@ var colt = {
 */
 
 //Code Here
-
+devMountainEmployees = [tyler, cahlan, ryan, colt];
+console.log(devMountainEmployees.length - 1);
 
 
 /*
@@ -316,7 +338,11 @@ var colt = {
 */
 
 //Code Here
-
+for(var i=0; i<devMountainEmployees.length-1; i++){
+  if(devMountainEmployees[i] === cahlan){
+    devMountainEmployees.splice(i,1);
+  }
+}
 
 
 ////////// PROBLEM 13 //////////
@@ -328,7 +354,10 @@ var colt = {
 */
 
 //Code Here
-
+var users = [
+  {
+  }
+];
 
 
 /*
@@ -347,7 +376,27 @@ var user1 = {
 // Do not edit the code above.
 
 //Code Here
-
+var users = [
+  user1,
+  {
+    name: "Eric",
+    email: "stuff",
+    password: "stuff",
+    username: "stuff",
+  },
+  {
+    name: "Eric",
+    email: "stuff",
+    password: "stuff",
+    username: "stuff",
+  },
+  {
+    name: "Eric",
+    email: "stuff",
+    password: "stuff",
+    username: "stuff",
+  },
+];
 
 
 /*
@@ -362,7 +411,13 @@ var user1 = {
 
 //Code Here
 
+for(var i=0; i<users.length; i++){
+  if(users[i].email === "tylermcginnis33@gmail.com"){
+    users.splice(i,1);
 
+  }
+
+}
 
 /*
   The activity we just did is very much how data works in 'the real world'.
