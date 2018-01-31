@@ -184,7 +184,21 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
+function removeItem(gList, itemRemove){
+  var item = gList.indexOf(itemRemove);
+  if(item > -1){
+    gList.splice(item, 1)
+  }
+  return gList;
+}
 
+function addItem(gList, itemAdd){
+  var item = gList.indexOf(itemAdd);
+  if(item === -1){
+    gList.push(itemAdd)
+  }
+  return gList;
+}
 
 
 ////////// PROBLEM 9 //////////
@@ -194,7 +208,13 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
-
+function maker(){
+  var arr = [];
+  for(var i=1; i<=215; i++){
+    arr.push(i);
+  }
+  return arr;
+}
 
 
 ////////// PROBLEM 10 //////////
