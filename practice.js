@@ -11,7 +11,7 @@
 // Do not edit the code below.
 var arr = [10,20,30];
 // Do not edit the code above.
-
+123
 /*
   Create a function named 'first' that is given 'arr' as an argument.
   Return the first item in the given array.
